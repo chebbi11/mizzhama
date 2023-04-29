@@ -6,10 +6,10 @@ Contact: support@themesbrand.com
 File: Custom Css File
 */
 
-// Select 2 
-@import "~@ng-select/ng-select/themes/default.theme.css";
+// Select 2
+@import "node_modules/@ng-select/ng-select/themes/default.theme.css";
 
-// Arch Wizard 
+// Arch Wizard
 @import "~angular-archwizard/styles/archwizard.css";
 
 // Lightbox
@@ -21,38 +21,38 @@ File: Custom Css File
     height: 16px !important;
     width: 16px !important;
   }
-  
+
   .icon-sm {
     height: 18px !important;
     width: 18px !important;
   }
-  
+
   .icon-md {
     height: 22px !important;
     width: 22px !important;
   }
-  
+
   .icon-lg {
     height: 24px !important;
     width: 24px !important;
   }
-  
+
   .icon-xl {
     height: 28px !important;
     width: 28px !important;
   }
-  
+
   .icon-xxl {
     height: 32px !important;
     width: 32px !important;
   }
-  
+
   .feather-icon-align{
     svg{
       vertical-align: text-top;
     }
   }
-  
+
   .close{
     box-sizing: content-box;
     width: $btn-close-width;
@@ -69,16 +69,16 @@ File: Custom Css File
       display: none;
     }
   }
-  
+
   .list-group-flush .list-group-item{
     border-width: 0 0 1px
   }
 
   // LeafLet Chart
   @import 'leaflet/dist/leaflet.css';
-  
+
   // topbar
-  
+
   #page-topbar {
     .navbar-header {
       .header-item {
@@ -88,25 +88,25 @@ File: Custom Css File
       }
     }
   }
-  
+
   // [data-layout="horizontal"] .main-content{
   //   min-height: 100vh;
   // }
-  
+
   // @media (min-width: 1024.1px){
   //   [data-layout="horizontal"] .main-content{
   //       min-height: calc(100vh - 70px);
   //   }
   // }
-  
+
   .checkout-accordion .accordion-button:not(.collapsed) {
     background-color: transparent;
   }
-  
+
   .dropzone_sec {
     border: 2px dashed #e2e5e8 !important;
   }
-  
+
   .dropzone .dz-message {
     font-size: 24px;
     min-height: 150px !important;
@@ -114,7 +114,7 @@ File: Custom Css File
     background: #fff !important;
     color: #495057 !important;
   }
-  
+
   // Calendar
   .flatpickr-calendar.open{
     z-index: 1061;
@@ -124,7 +124,7 @@ File: Custom Css File
     width: 100%;
     background: #a2adb7 !important;
   }
-  
+
   @each $color, $value in $theme-colors {
     [data-simplebar-track="#{$color}"]{
       .simplebar-scrollbar:before{
@@ -132,8 +132,8 @@ File: Custom Css File
       }
     }
   }
-  
-  
+
+
   // ------------ Base Ui ---------//
   // Alert
   .custom-alert {
@@ -152,15 +152,15 @@ File: Custom Css File
       height: 1em;
       z-index: 2;
       color: $btn-close-color;
-  
+
       span {
         display: none;
       }
     }
   }
-  
+
   //accordion
-  
+
   .accordion{
     .card{
       margin-bottom: 0;
@@ -177,7 +177,7 @@ File: Custom Css File
       }
     }
   }
-  
+
   //Dropdown
   .dropdown-toggle {
     &.arrow-none {
@@ -186,10 +186,10 @@ File: Custom Css File
       }
     }
   }
-  
-  
-  
-  
+
+
+
+
   // ----- Advance Ui --------//
   // Rating
   .stars {
@@ -223,13 +223,13 @@ File: Custom Css File
   .filled.bad {
     color: #ff1e1e;
   }
-  
+
   //Swiper Slider
   .swiper-button-next::after,
   .swiper-button-prev::after {
     font-family: remixicon !important;
   }
-  
+
   // Form wizard
   .custom-nav {
     aw-wizard-navigation-bar {
@@ -321,7 +321,7 @@ File: Custom Css File
       }
     }
   }
-  
+
   .custom-nav {
     &.nav-wizard {
       aw-wizard-navigation-bar {
@@ -410,17 +410,17 @@ File: Custom Css File
       }
     }
   }
-  
+
   // filter slider
   .ngx-slider{
     .ngx-slider-bar{
       background: var(--#{$variable-prefix}light) !important;
     }
-  
+
     .ngx-slider-selection{
       background: $success !important;
     }
-  
+
     .ngx-slider-pointer{
       width: 16px !important;
       height: 16px !important;
@@ -439,10 +439,10 @@ File: Custom Css File
       }
     }
   }
-  
-  
+
+
   //form
-  
+
   //select
   .ng-dropdown-panel {
     .ng-dropdown-panel-items {
@@ -453,19 +453,19 @@ File: Custom Css File
         border-bottom: 1px solid $border-color;
         color: $text-muted;
       }
-  
+
       .ng-option{
         &.ng-option-child{
           position: relative;
             font-size: $dropdown-font-size;
             padding: $dropdown-item-padding-y $dropdown-item-padding-x $dropdown-item-padding-y 16px;
         }
-  
+
         &.ng-option-selected, &.ng-option-selected.ng-option-marked{
           background-color: $dropdown-link-hover-bg;
           color: $dropdown-color;
         }
-  
+
         &.ng-option-marked{
           background-color: $dropdown-link-hover-bg;
           color: $dropdown-color;
@@ -486,30 +486,30 @@ File: Custom Css File
       }
     }
   }
-  
+
   .ng-select.ng-select-disabled>.ng-select-container{
     background-color: rgba(var(--#{$variable-prefix}light-rgb), 0.75);
     .ng-value-container .ng-value.ng-value-disabled{
       background-color: $secondary;
     }
   }
-  
-  
-  
+
+
+
   // grid js
-  
-  
+
+
   .table-gridjs {
     th,
     td {
       border: 1px solid $table-border-color;
       padding: $table-cell-padding-y $table-cell-padding-x;
     }
-  
+
     th {
       color: $table-color;
       background-color: rgba(var(--#{$variable-prefix}light-rgb), 0.75);
-  
+
       &.gridjs-th-sort {
         &:focus,
         &:hover {
@@ -518,7 +518,7 @@ File: Custom Css File
       }
     }
   }
-  
+
   .gridjs-pagination {
     .pagination {
       margin: 0;
@@ -531,7 +531,7 @@ File: Custom Css File
       }
     }
   }
-  
+
   .gridjs-checkbox{
     width: $form-check-input-width;
     height: $form-check-input-width;
@@ -548,7 +548,7 @@ File: Custom Css File
       @include border-radius($form-check-input-border-radius);
     }
   }
-  
+
   .gridjs-checkbox[type=checkbox]:checked{
     background-color: $form-check-input-checked-bg-color;
     border-color: $form-check-input-checked-border-color;
@@ -558,9 +558,9 @@ File: Custom Css File
         background-image: escape-svg($form-check-input-checked-bg-image);
       }
   }
-  
+
   // list js
-  
+
   .listjs-pagination{
     .pagination{
       margin-bottom: 0;
@@ -568,22 +568,22 @@ File: Custom Css File
       gap: 8px;
     }
   }
-  
+
   // profile timeline
-  
+
   .profile-timeline{
     .card{
       position: relative;
       border: 0;
-  
+
       .accordion-button {
           background-color: transparent;
-  
+
           &::after {
               background: none;
           }
       }
-  
+
       &::before {
           content: "";
           border-left: 2px dashed $border-color;
@@ -591,13 +591,13 @@ File: Custom Css File
           height: 100%;
           left: 23px;
       }
-  
+
       &:first-child {
           &::before {
               top: 8px;
           }
       }
-  
+
       &:last-child {
           &::before {
               height: 20px;
@@ -606,7 +606,7 @@ File: Custom Css File
       }
   }
   }
-  
+
   // task
   // kanban board
   .tasks{
@@ -614,7 +614,7 @@ File: Custom Css File
     flex-direction: column;
     gap: 24px;
   }
-  
+
   .kanban-accordion{
     .card{
       box-shadow: $box-shadow;
@@ -626,12 +626,12 @@ File: Custom Css File
       > .collapse{
         > .card-body{
           padding: 0;
-  
+
           .card{
             margin-bottom: 0.25rem;
           }
         }
-  
+
         .card-header {
           > .btn.btn-link{
             padding: 16px;
@@ -643,21 +643,21 @@ File: Custom Css File
       }
     }
   }
-  
+
   // dashboard
-  
+
   .upcoming-scheduled{
     input[readonly]{
       display: none;
     }
   }
-  
+
   .products-filter{
     .card {
       border-bottom: none;
     }
   }
-  
+
   .light-dark-mode{
     .bx-moon {
       display: block;
@@ -666,15 +666,15 @@ File: Custom Css File
       display:none;
     }
   }
-  
+
   // dropzone
-  
+
   dropzone>.dropzone.dz-wrapper .dz-message .dz-text{
     font-size:16px;
   }
-  
+
   // Swiper
-  
+
   .swiper-pagination-bullet{
     width: 22px !important;
     height: 5px !important;
@@ -686,11 +686,11 @@ File: Custom Css File
         opacity: 1 !important;
     }
   }
-  
+
   swiper>.swiper.s-wrapper .swiper-pagination .swiper-pagination-handle{
     height: 10px !important;
   }
-  
+
   .dynamic-pagination{
     .swiper-pagination-bullet {
         width: 8px !important;
@@ -704,7 +704,7 @@ File: Custom Css File
         }
     }
   }
-  
+
   [data-layout-mode="dark"] {
     .light-dark-mode{
       .bx-moon {
@@ -715,11 +715,11 @@ File: Custom Css File
       }
     }
   }
-  
+
   .leaflet-container {
     z-index: 1 !important;
   }
-  
+
   @media (max-width: 600px)
   {
     .navbar-header .dropdown .dropdown-menu {
@@ -729,12 +729,12 @@ File: Custom Css File
       width: auto !important;
     }
   }
-  
+
   .dropdown-menu-end {
     left: auto !important;
     right: 0 !important;
   }
-  
+
   // Pages Team
   .team-overlay {
     position: fixed;
@@ -749,9 +749,9 @@ File: Custom Css File
   .team-overlay.show{
     display: block;
   }
-  
+
   // twostep input
-  
+
   .twostep-input{
     .wrapper{
       display: flex;
@@ -765,14 +765,14 @@ File: Custom Css File
       }
     }
   }
-  
+
   // team list
   .team-list.grid-view-filter .team-box .team-settings .dropdown{
     .dropdown-menu{
       transform: translate(0, 26px) !important;
     }
   }
-  
+
   //autocomplete
   .autocomplete-container{
     box-shadow: none !important;
@@ -782,9 +782,9 @@ File: Custom Css File
     border: 1px solid $input-border-color !important;
     height: 37.5px !important;
     @include border-radius($input-border-radius, 0);
-    
+
   }
-  
+
   .autocomplete-container .input-container .x {
     right: 6px;
     i{

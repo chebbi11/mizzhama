@@ -6,8 +6,11 @@ import {Router} from "@angular/router";
   templateUrl: './navbar-user.component.html',
   styleUrls: ['./navbar-user.component.css']
 })
-export class NavbarUserComponent{
+export class NavbarUserComponent implements OnInit {
   constructor(private router: Router) {
+  }
+
+  ngOnInit() {
   }
   redirectToRegister() {
     console.log("ok");

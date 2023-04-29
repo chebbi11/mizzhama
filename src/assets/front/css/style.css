@@ -56,6 +56,7 @@ Version: 1.0.2
 
 .home-3 {
   --main-color: #fdc800;
+  padding-top: 1px;
 }
 
 html {
@@ -77,7 +78,6 @@ html {
 body {
   margin: 0;
   color: var(--paragraph-color);
-  overflow-x: hidden;
   font-family: var(--body-font);
   line-height: var(--line-height30);
   font-size: var(--body-font-size);

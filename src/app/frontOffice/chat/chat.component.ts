@@ -2,9 +2,9 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { GroupUser, ChatUser, ChatMessage } from './chat.model';
 import { groupData, chatData, chatMessagesData } from './data';
-
 // Light Box
 import { Lightbox } from 'ngx-lightbox';
+import {NavbarUserComponent} from "../navbar-user/navbar-user.component";
 
 @Component({
   selector: 'app-chat',
@@ -31,7 +31,7 @@ export class ChatComponent implements OnInit {
 
   images: { src: string; thumb: string; caption: string }[] = [];
 
-  constructor(public formBuilder: FormBuilder, private lightbox: Lightbox) { 
+  constructor(public formBuilder: FormBuilder, private lightbox: Lightbox) {
     for (let i = 1; i <= 24; i++) {
       const src = '../../../../assets/images/small/img-' + i + '.jpg';
       const caption = 'Image ' + i + ' caption here';
