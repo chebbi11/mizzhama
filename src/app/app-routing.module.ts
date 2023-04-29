@@ -21,6 +21,7 @@ import {DashboardAdminComponent} from "./backOffice/dashboard-admin/dashboard-ad
 import {DetailsAdminComponent} from "./backOffice/details-admin/details-admin.component";
 import {PromotionUserComponent} from "./frontOffice/promotion-user/promotion-user.component";
 import {ChatUserComponent} from "./frontOffice/chat-user/chat-user.component";
+import {ChatComponent} from "./frontOffice/chat/chat.component";
 import {PromotionAdminComponent} from "./backOffice/promotion-admin/promotion-admin.component";
 const routes: Routes = [
   {
@@ -53,7 +54,8 @@ const routes: Routes = [
       {path:'upload-logo',component:UploadLogoUserComponent},
       {path:'home-buyer',component:HomeBuyerUserComponent},
       {path:'promtion-user',component:PromotionUserComponent},
-      {path:'chat-user',component:ChatUserComponent}
+      {path:'chat-user',component:ChatUserComponent},
+      {path:'chat',component:ChatComponent}
 
     ]
   }

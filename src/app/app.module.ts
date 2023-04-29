@@ -38,13 +38,30 @@ import { DetailsAdminComponent } from './backOffice/details-admin/details-admin.
 import {ChatUserComponent} from "./frontOffice/chat-user/chat-user.component";
 import {PromotionUserComponent} from "./frontOffice/promotion-user/promotion-user.component";
 import {PromotionAdminComponent} from "./backOffice/promotion-admin/promotion-admin.component";
-import {LightboxModule} from "ngx-lightbox";
-import {FeatherModule} from "angular-feather";
-import {SimplebarAngularModule} from "simplebar-angular";
 
 
 
 
+import { NgbTooltipModule, NgbDropdownModule, NgbAccordionModule, NgbProgressbarModule } from '@ng-bootstrap/ng-bootstrap';
+
+
+// Calendar package
+import { FeatherModule } from 'angular-feather';
+import { allIcons } from 'angular-feather/icons';
+// Flat Picker
+import { FlatpickrModule } from 'angularx-flatpickr';
+// Simplebar
+import { SimplebarAngularModule } from 'simplebar-angular';
+// Ck Editer
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+// Counter
+import { CountToModule } from 'angular-count-to';
+// Apex Chart Package
+import { NgApexchartsModule } from 'ng-apexcharts';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+import {CommonModule} from "@angular/common";
+import {ChatComponent} from "./frontOffice/chat/chat.component";
+import { LightboxModule} from "ngx-lightbox";
 
 
 @NgModule({
@@ -82,7 +99,7 @@ import {SimplebarAngularModule} from "simplebar-angular";
     PromotionUserComponent,
     ChatUserComponent,
     PromotionAdminComponent,
-
+    ChatComponent,
   ],
   imports: [
     BrowserModule,
@@ -90,10 +107,21 @@ import {SimplebarAngularModule} from "simplebar-angular";
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    LightboxModule,
-    FeatherModule,
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgbTooltipModule,
+    NgbDropdownModule,
+    NgbAccordionModule,
+    NgbProgressbarModule,
+    FeatherModule.pick(allIcons),
+    FlatpickrModule.forRoot(),
     SimplebarAngularModule,
-
+    CKEditorModule,
+    CountToModule,
+    NgApexchartsModule,
+    LeafletModule,
+    LightboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
