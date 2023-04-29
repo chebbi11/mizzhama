@@ -38,8 +38,9 @@ import { DetailsAdminComponent } from './backOffice/details-admin/details-admin.
 import {ChatUserComponent} from "./frontOffice/chat-user/chat-user.component";
 import {PromotionUserComponent} from "./frontOffice/promotion-user/promotion-user.component";
 import {PromotionAdminComponent} from "./backOffice/promotion-admin/promotion-admin.component";
-import {NgxSimplebarModule} from "ngx-simplebar";
 import {LightboxModule} from "ngx-lightbox";
+import {FeatherModule} from "angular-feather";
+import {SimplebarAngularModule} from "simplebar-angular";
 
 
 
@@ -80,7 +81,7 @@ import {LightboxModule} from "ngx-lightbox";
     DetailsAdminComponent,
     PromotionUserComponent,
     ChatUserComponent,
-    PromotionAdminComponent
+    PromotionAdminComponent,
 
   ],
   imports: [
@@ -89,8 +90,9 @@ import {LightboxModule} from "ngx-lightbox";
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    NgxSimplebarModule,
     LightboxModule,
+    FeatherModule,
+    SimplebarAngularModule,
 
   ],
   providers: [],
